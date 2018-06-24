@@ -1,0 +1,61 @@
+
+.App {
+  text-align: center;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.Header {
+  margin-top: 90px;
+  position:relative;
+  z-index: 9999;
+}
+
+.TitleName {
+  margin-top: 10px;
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+
+.TitleDescription {
+  font-weight: lighter;
+  line-height: 0px;
+}
+
+.pic {
+  margin-bottom: 0px;
+  width: "50%";
+  height: 200px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pic:hover, .pic:focus {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.Icon1, .Icon2, .Icon3 {
+  margin: 0 5px;
+  z-index: 10;
+  transition: 0.3s;
+  opacity: 3.0;
+}
+
+.Icon1:hover, .Icon1:focus, .Icon2:hover, .Icon2:focus, .Icon3:hover, .Icon3:focus {
+  opacity: 0.6;
+}
+
+.Body {
+  background-color: #FEFEFE;
+  position:relative;
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  box-sizing: content-box;   
+  width: 30%;
+  height: 30%;
+  padding: 10px;    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
