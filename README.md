@@ -1,2 +1,2 @@
-# [Deployment](http://josiahsingh.me/MyPortfolio/)
+# [Deployment](http://josiahsingh.me/)
 
