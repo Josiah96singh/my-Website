@@ -22,7 +22,7 @@ class App extends Component {
         <nav>
           <a href="#header">Home</a>
           <span>/</span>
-          <a href="#skill_content">Skills</a>
+          <a href="#skills_content">Skills</a>
           <span>/</span>
           <a href="#projects_content">Projects</a>
           <span>/</span>
