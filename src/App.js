@@ -17,6 +17,10 @@ class App extends Component {
     this.state = { particleConfig: Default };
   }
 
+  componentDidMount() {
+    document.title = "JosiahSingh";
+  }
+
   render() {
     return (
       <div className="app">
