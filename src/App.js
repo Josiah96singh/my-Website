@@ -19,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <title>JosiahSingh</title>
         <nav>
           <a href="#header">Home</a>
           <span>/</span>
