@@ -16,10 +16,14 @@ class App extends Component {
     super();
     this.state = { particleConfig: Default };
   }
+
+  componentDidMount() {
+    document.title = "JosiahSingh";
+  }
+
   render() {
     return (
       <div className="app">
-        <title>JosiahSingh</title>
         <nav>
           <a href="#header">Home</a>
           <span>/</span>
