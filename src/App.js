@@ -140,7 +140,7 @@ class App extends Component {
               <div id="projects" className="projects">
                 <h2> UNSPLASH CLONE</h2>
                 <p>#react</p>
-                <a href="https://js-unsplash-react.netlify.com/" target="blank">
+                <a href="http://unsplash-js-react.surge.sh" target="blank">
                   <img src={Unsplash} />
                 </a>
               </div>
