@@ -138,7 +138,7 @@ class App extends Component {
                 <p>#react</p>
                 <a href="http://unsplash-js-react.surge.sh" target="blank">
                   <video autoPlay loop muted playsInline>
-                    <source src={Unsplash} type="video/webm" />
+                    <source src={Unsplash} type="video/mp4" />
                   </video>
                 </a>
               </div>
