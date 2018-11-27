@@ -7,7 +7,7 @@ import Git from "./Components/Icons/Git.png";
 import LD from "./Components/Icons/LD.png";
 import Twitter from "./Components/Icons/Twitter.png";
 import NewsMock from "./Components/news1.png";
-import Unsplash from "./Components/unsplash.webm";
+import Unsplash from "./Components/unsplash.mp4";
 import Resume from "./Components/Resume.pdf";
 
 class App extends Component {
