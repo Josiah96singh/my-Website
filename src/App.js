@@ -57,22 +57,25 @@ class App extends Component {
                 className="Icon1"
                 href="https://github.com/Josiah96singh"
                 target="_blank"
+                rel="noreferrer noopener"
               >
-                <img src={Git} width="30px" />
+                <img src={Git} width="30px" alt="img" />
               </a>
               <a
                 className="Icon2"
                 href="https://twitter.com/josiahernest?lang=en"
                 target="_blank"
+                rel="noreferrer noopener"
               >
-                <img src={Twitter} width="30px" />
+                <img src={Twitter} width="30px" alt="img" />
               </a>
               <a
                 className="Icon3"
                 href="https://www.linkedin.com/in/josiah-ameet-singh-59398611b/"
                 target="_blank"
+                rel="noreferrer noopener"
               >
-                <img src={LD} width="32px" />
+                <img src={LD} width="32px" alt="img" />
               </a>
             </div>
             <div className="Line" />
@@ -98,7 +101,7 @@ class App extends Component {
         </div>
 
         <div className="content">
-          <div id="#skills" className="skills_content">
+          <div id="skills" className="skills_content">
             <h1>Skills</h1>
             <h4>Languages</h4>
             <p>JavaScript | Java | HTML | CSS</p>
@@ -108,7 +111,7 @@ class App extends Component {
             <p>Node | Express | Spring | SQL </p>
           </div>
 
-          <div id="#projects" className="projects_content">
+          <div id="#" className="projects_content">
             <h1>Projects</h1>
             <p>
               A list of recent projects I've been working on like mobile
@@ -117,17 +120,17 @@ class App extends Component {
                 className="projects_a"
                 href="https://github.com/Josiah96singh"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <b>github</b>
               </a>
-              .
             </p>
             <div id="projects" className="grouped_projects">
               <div className="projects">
                 <h2> News App</h2>
                 <p>#reactnative #firebase</p>
                 <a href="https://expo.io/@josiahsingh/newsapp" target="blank">
-                  <img src={NewsMock} />
+                  <img src={NewsMock} alt="newsimg" />
                 </a>
               </div>
               <div className="projects">
@@ -141,7 +144,8 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div id="#contacts" className="contact">
+
+          <div id="contacts" className="contact">
             <a
               href="mailto:Josiahsingh1996@gmail.com?Subject=Hello"
               target="_top"

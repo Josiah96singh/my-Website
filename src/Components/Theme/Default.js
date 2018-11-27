@@ -1,5 +1,3 @@
-import { black } from "material-ui/styles/colors";
-
 export default {
   particles: {
     number: {
