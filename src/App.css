@@ -3,23 +3,36 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-
+html body {
+  text-align: center;
+}
     
 .app {
-  text-align: center;
-  background: linear-gradient(to right, #232526, #414345);
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+ 
 .app-title {
   font-size: 1.5em;
 }
 
 .header {
+   background-color: rgb(44, 44, 44);
+   height:85vh;
+   transform: translateZ(-1px) scale(2);
+   z-index: -1;
+}
+
+.header_contents {
   padding-top: 50px;
   position:relative;
   z-index: 9999;
 }
 
-.TitleName {
+.titleName {
   margin-top: 0px;
   padding: 2px;
   font-size: 3em;
@@ -27,31 +40,41 @@
   color: white;
 }
 
-.TitleDescription {
+.titleDescription {
   font-weight: lighter;
   line-height: 0px;
   color: white;
 }
 
 nav {
-  background: linear-gradient(to right, #ece9e6, #ffffff);
+  background-color: white;
   overflow: hidden;
-  padding: 20px;
+  padding-bottom: 20px;
   position: relative;;
   z-index: 9999;
-  margin-left: 35%;
-  margin-right: 35%;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
+
 nav a {
-  color: #131313;
-  text-align: center;
-  padding: 14px 16px;
+  color: rgb(68, 68, 68);
+  padding: 14px 20px;
+  font-size: 16px;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 17px;
+  transition: 0.1s;
+}
+
+nav a:hover, a:focus {
+  color: rgb(241, 222, 109);
+}
+
+nav span {
+  color: rgb(61, 61, 61);
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .circular--portrait {
@@ -62,128 +85,116 @@ nav a {
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
-  transition: 0.3s;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .circular--portrait img {
   width: auto;
   height: 100%;
-  margin-left: -45px;
 }
 
-.circular--portrait:hover, .circular--portrait:focus {
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+.Icons {
+  padding-top: 25px;
 }
 
 .Icon1, .Icon2, .Icon3 {
   margin: 0 5px;
   z-index: 10;
-  transition: 0.3s;
+  transition: 0.1s;
   opacity: 3.0;
 }
 
 .Icon1:hover, .Icon1:focus, .Icon2:hover, .Icon2:focus, .Icon3:hover, .Icon3:focus {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 
 .Line {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  margin-top: 15px;
   width: 30%;
   height: 1px;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-.header p {
-  padding-top: 20px;
+.intro {
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
-.content {
+.intro p {
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+
+.content { 
   background-color: white;
   position:relative;
-  z-index: 9999;
   padding-top: 0px;
+  z-index: 1;
 }
 
 .skills_content {
   background-color: #ffffff;
-  padding: 25px;
+  padding: 20px;
 }
 
 .skills_content h1 {
   font-family: "Josefin Sans";
 }
 
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} 
-
- .skills { 
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px;
-
+.skills_content h4 {
+  text-transform: capitalize;
+  font-family: "Josefin Sans";
+  padding-top: 10px;
 }
 
-.skills h4 {
-  font-family: "Josefin Sans"
+.skills_content p {
+  color: #232526;
+  font-family: "Josefin Sans";
 }
 
-.grouped_skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.grouped_skills h5 {
-  margin: 10px;
-  font-weight: lighter;
-}
-
+/*placement and background gradient*/
 .projects_content {
   padding-top: 50px;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
-.projects_content h1, p {
+/*font and color*/
+.projects_content h1, .projects_content p, .projects_content b {
   font-family: "Josefin Sans";
-  color: #ffffff;
-
+  color: black;
 }
 
 .grouped_projects { 
-  flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.projects img {
+.projects img  {
   width: 80%;
   transition: 0.3s;
 }
 
-.projects img:hover, .projects img:focus {
-  width: 83%; 
+.projects video {
+  width: 80%;
+  transition: 0.3s;
+}
+
+.projects img:hover, .projects img:focus, .projects video:hover, .projects video:focus {
+  transform:scale(1.01);
 }
 
 .projects {
-
   margin-left: auto;
   margin-right: auto; 
   display: inline-block;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 30%;
   padding-bottom: 20px;
 }
@@ -207,53 +218,56 @@ margin-bottom: 0;
 }
 
 .contact {
-  padding: 10%;
-  margin-left: auto;
-  margin-right: auto; 
+  padding: 4em;
 }
 
 .contact a {
   font-family: "Josefin Sans";
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 3em;
   text-decoration: none;
   color: inherit;
-  transition: 0.2s;
+  transition: 0.3s;
+}
+
+.contact p {
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  color: #343535;
 }
 
 .contact a:hover, .contact a:focus {
-  font-size: 2.8em;
-  opacity: 0.6;
+  color: rgb(150, 150, 150)
 }
 
 
 @media (min-width: 320px) and (max-width: 480px)  { 
 
     nav {
-      background: linear-gradient(to right, #ece9e6, #ffffff);
+    background-color: white;
       position: relative;;
       z-index: 9999;
       padding: 5px;
       padding-bottom: 10px; 
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto; 
     }
 
     nav a {
-      color: #131313;
+      color: black;
       text-align: center;
       padding: 6px 8px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 13px;
     }
 
-    .header p {
-      padding-top: 20px;
-      padding-bottom: 20px;
+    .intro  {
+      padding-top: 10px;
       width: 80%;
       margin-left: auto;
       margin-right: auto; 
+    }
+
+    .Line {
+      width: 50%;
     }
 
 
@@ -282,6 +296,11 @@ margin-bottom: 0;
       margin-top: 10px;
     }
 
+    .projects_content p {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
     .projects:nth-child(2) {
       width: 100%;
       margin-top: 10px;
@@ -290,11 +309,7 @@ margin-bottom: 0;
     .contact a {
       font-family: "Josefin Sans";
       font-weight: bold;
-      font-size: 1.5em;
-    }
-
-    .contact a:hover, .contact a:focus {
-      font-size: 1.5em;
+      font-size: 3em;
     }
 }
 
@@ -302,25 +317,22 @@ margin-bottom: 0;
   
   
   nav {
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    background-color: white;
     position: relative;;
     z-index: 9999;
     padding: 5px;
     padding-bottom: 10px; 
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto; 
   }
 
   nav a {
-    color: #131313;
+    color: black;
     text-align: center;
     padding: 6px 8px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
   }
   
-  .header p {
+  .intro {
     width: 80%;
     margin-left: auto;
     margin-right: auto; 

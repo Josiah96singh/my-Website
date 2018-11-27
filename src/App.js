@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import "./App.css";
 import avatar from "./Components/Pic.jpg";
 import Particles from "react-particles-js";
-import Bubble from "./Components/Theme/Bubble";
 import Default from "./Components/Theme/Default";
 import Git from "./Components/Icons/Git.png";
 import LD from "./Components/Icons/LD.png";
 import Twitter from "./Components/Icons/Twitter.png";
-import NewsMock1 from "./Components/news1.png";
-import Unsplash from "./Components/unsplash.gif";
+import NewsMock from "./Components/news1.png";
+import Unsplash from "./Components/unsplash.webm";
 import Resume from "./Components/Resume.pdf";
 
 class App extends Component {
@@ -21,150 +20,139 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <nav>
-          <a href="#header">Home</a>
-          <span>/</span>
-          <a href="#skills_content">Skills</a>
-          <span>/</span>
-          <a href="#projects_content">Projects</a>
-          <span>/</span>
-          <a href={Resume} target="blank">
-            Resume &#9756;
-          </a>
-        </nav>
-
         <div className="header">
-          <div class="circular--portrait">
-            <img src={avatar} alt="Avatar" />
-          </div>
+          <Particles
+            params={this.state.particleConfig}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%"
+            }}
+          />
+          <nav id="navbar">
+            <a href="#skills">Skills</a>
+            <span>|</span>
+            <a href="#projects">Projects</a>
+            <span>|</span>
+            <a href="#contacts">Contact</a>
+            <span>|</span>
+            <a href={Resume} target="blank">
+              Resume
+            </a>
+          </nav>
 
-          <h1 className="TitleName">Josiah Singh.</h1>
-          <h4 className="TitleDescription">
-            Student Developer at Haaga-helia UAS
-          </h4>
-          <div className="Icons">
-            <a
-              className="Icon1"
-              href="https://github.com/Josiah96singh"
-              target="_blank"
-            >
-              <img src={Git} width="30px" />
-            </a>
-            <a
-              className="Icon2"
-              href="https://twitter.com/josiahernest?lang=en"
-              target="_blank"
-            >
-              <img src={Twitter} width="30px" />
-            </a>
-            <a
-              className="Icon3"
-              href="https://www.linkedin.com/in/josiah-ameet-singh-59398611b/"
-              target="_blank"
-            >
-              <img src={LD} width="32px" />
-            </a>
-          </div>
-          <div className="Line" />
+          <div className="header_contents">
+            <div className="circular--portrait">
+              <img src={avatar} alt="Avatar" />
+            </div>
 
-          <p>
-            A passionate web developer who enjoys building great digital
-            experiences for people. I'm currently pursuing a Bachelors degree in
-            Business Information &#38; Technology.
-          </p>
+            <h1 className="titleName">Josiah Singh</h1>
+            <h4 className="titleDescription">
+              Student Developer at Haaga-helia UAS
+            </h4>
+            <div className="Icons">
+              <a
+                className="Icon1"
+                href="https://github.com/Josiah96singh"
+                target="_blank"
+              >
+                <img src={Git} width="30px" />
+              </a>
+              <a
+                className="Icon2"
+                href="https://twitter.com/josiahernest?lang=en"
+                target="_blank"
+              >
+                <img src={Twitter} width="30px" />
+              </a>
+              <a
+                className="Icon3"
+                href="https://www.linkedin.com/in/josiah-ameet-singh-59398611b/"
+                target="_blank"
+              >
+                <img src={LD} width="32px" />
+              </a>
+            </div>
+            <div className="Line" />
+            <div className="intro">
+              <p>
+                Passionate about web/mobile development and building great
+                digital experiences. I'm currently pursuing a Bachelors degree
+                in Business Information Technology.
+              </p>
+              <p>
+                I strive for <b>Fast</b>, {""}
+                <b>Responsive</b>, {""}
+                <b>Intuitive</b> {""}& {""}
+                <b>Dynamic</b> solutions while constantly learning to write and
+                maintain <b>clean code</b>.
+              </p>
+              <p>
+                Currently looking for a developer position in <b>Finland</b> to
+                boost my experience and development skills.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="content">
-          <div id="skills_content" className="skills_content">
-            <h1>SKILLS</h1>
-            <div className="grouped_skills">
-              <div className="skills">
-                <ul>
-                  <h4>FRONTEND</h4>
-                  <li>
-                    <h5>HTML5/CSS3</h5>
-                  </li>
-                  <li>
-                    <h5>Javascript</h5>
-                  </li>
-                  <li>
-                    <h5>React</h5>
-                  </li>
-                  <li>
-                    <h5>React Native</h5>
-                  </li>
-                </ul>
-              </div>
-              <div className="skills">
-                <ul>
-                  <h4>BACKEND</h4>
-                  <li>
-                    <h5>Firebase</h5>
-                  </li>
-                  <li>
-                    <h5>SQL Server</h5>
-                  </li>
-                  <li>
-                    <h5>Spring</h5>
-                  </li>
-                </ul>
-              </div>
-              <div className="skills">
-                <ul>
-                  <h4>DESIGN/UX</h4>
-                  <li>
-                    <h5>Sketch</h5>
-                  </li>
-                  <li>
-                    <h5>Adobe XD</h5>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div id="#skills" className="skills_content">
+            <h1>Skills</h1>
+            <h4>Languages</h4>
+            <p>JavaScript | Java | HTML | CSS</p>
+            <h4>Frontend</h4>
+            <p>React | React Native | jQuery </p>
+            <h4>Backend</h4>
+            <p>Node | Express | Spring | SQL </p>
           </div>
 
-          <div id="projects_content" className="projects_content">
-            <h1>PROJECTS</h1>
+          <div id="#projects" className="projects_content">
+            <h1>Projects</h1>
             <p>
-              A list of recent projects I've been working on like apps,websites
-              and design prototypes.
+              A list of recent projects I've been working on like mobile
+              apps,websites and design prototypes. More on{" "}
+              <a
+                className="projects_a"
+                href="https://github.com/Josiah96singh"
+                target="_blank"
+              >
+                <b>github</b>
+              </a>
+              .
             </p>
-            <div className="grouped_projects">
+            <div id="projects" className="grouped_projects">
               <div className="projects">
-                <h2> NEWS APP</h2>
+                <h2> News App</h2>
                 <p>#reactnative #firebase</p>
                 <a href="https://expo.io/@josiahsingh/newsapp" target="blank">
-                  <img src={NewsMock1} />
+                  <img src={NewsMock} />
                 </a>
               </div>
-              <div id="projects" className="projects">
-                <h2> UNSPLASH CLONE</h2>
+              <div className="projects">
+                <h2> Unsplash Clone</h2>
                 <p>#react</p>
                 <a href="http://unsplash-js-react.surge.sh" target="blank">
-                  <img src={Unsplash} />
+                  <video autoPlay loop muted playsInline>
+                    <source src={Unsplash} type="video/webm" />
+                  </video>
                 </a>
               </div>
             </div>
           </div>
-          <div className="contact">
+          <div id="#contacts" className="contact">
             <a
               href="mailto:Josiahsingh1996@gmail.com?Subject=Hello"
               target="_top"
             >
-              CONTACT ME
+              Contact
             </a>
+            <p>Have questions or want to work together?</p>
+
+            <div className="Line" />
           </div>
         </div>
-        <Particles
-          params={this.state.particleConfig}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%"
-          }}
-        />
       </div>
     );
   }
