@@ -129,7 +129,7 @@ class App extends Component {
               <div className="projects">
                 <h2> News App</h2>
                 <p>#reactnative #firebase</p>
-                <a href="https://expo.io/@josiahsingh/newsapp" target="blank">
+                <a href="https://expo.io/@josiahsingh/news-app" target="blank">
                   <img src={NewsMock} alt="newsimg" />
                 </a>
               </div>
