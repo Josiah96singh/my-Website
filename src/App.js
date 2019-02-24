@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
-import avatar from "./Components/Pic.jpg";
+import avatar from "./Components/Pic(gimp).jpg";
 import Particles from "react-particles-js";
 import Default from "./Components/Theme/Default";
 import Git from "./Components/Icons/Git.png";
 import LD from "./Components/Icons/LD.png";
 import Twitter from "./Components/Icons/Twitter.png";
-import NewsMock from "./Components/news1.png";
+import NewsMock from "./Components/news1(gimp).png";
 import Unsplash from "./Components/unsplash.mp4";
 import Resume from "./Components/Resume.pdf";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("UUA-124518818-1");
+ReactGA.pageview("/josiahsingh.me");
 
 class App extends Component {
   constructor() {
