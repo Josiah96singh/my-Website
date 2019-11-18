@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Anton");
 
 html body {
   text-align: center;
 }
-    
+
 .app {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -14,21 +14,21 @@ html body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
- 
+
 .app-title {
   font-size: 1.5em;
 }
 
 .header {
-   background-color: rgb(44, 44, 44);
-   height:85vh;
-   transform: translateZ(-1px) scale(2);
-   z-index: -1;
+  background-color: rgb(44, 44, 44);
+  height: 90vh;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
 }
 
 .header_contents {
   padding-top: 50px;
-  position:relative;
+  position: relative;
   z-index: 9999;
 }
 
@@ -50,11 +50,11 @@ nav {
   background-color: white;
   overflow: hidden;
   padding-bottom: 20px;
-  position: relative;;
+  padding: 20px;
+  position: relative;
   z-index: 9999;
-
+  top: -1em;
 }
-
 
 nav a {
   color: rgb(68, 68, 68);
@@ -67,8 +67,9 @@ nav a {
   transition: 0.1s;
 }
 
-nav a:hover, a:focus {
-  color: rgb(241, 222, 109);
+nav a:hover,
+a:focus {
+  color: rgb(173, 173, 173);
 }
 
 nav span {
@@ -85,7 +86,6 @@ nav span {
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
-
 }
 
 .circular--portrait img {
@@ -97,17 +97,23 @@ nav span {
   padding-top: 25px;
 }
 
-.Icon1, .Icon2, .Icon3 {
+.Icon1,
+.Icon2,
+.Icon3 {
   margin: 0 5px;
   z-index: 10;
   transition: 0.1s;
-  opacity: 3.0;
+  opacity: 3;
 }
 
-.Icon1:hover, .Icon1:focus, .Icon2:hover, .Icon2:focus, .Icon3:hover, .Icon3:focus {
+.Icon1:hover,
+.Icon1:focus,
+.Icon2:hover,
+.Icon2:focus,
+.Icon3:hover,
+.Icon3:focus {
   opacity: 0.5;
 }
-
 
 .Line {
   margin-left: auto;
@@ -128,10 +134,9 @@ nav span {
   font-family: "Josefin Sans";
 }
 
-
-.content { 
+.content {
   background-color: white;
-  position:relative;
+  position: relative;
   padding-top: 0px;
   z-index: 1;
 }
@@ -156,7 +161,6 @@ nav span {
   font-family: "Josefin Sans";
 }
 
-
 /*placement and background gradient*/
 .projects_content {
   padding-top: 50px;
@@ -164,19 +168,21 @@ nav span {
 }
 
 /*font and color*/
-.projects_content h1, .projects_content p, .projects_content b {
+.projects_content h1,
+.projects_content p,
+.projects_content b {
   font-family: "Josefin Sans";
   color: black;
 }
 
-.grouped_projects { 
+.grouped_projects {
   display: flex;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.projects img  {
+.projects img {
   width: 80%;
   transition: 0.3s;
 }
@@ -186,13 +192,16 @@ nav span {
   transition: 0.3s;
 }
 
-.projects img:hover, .projects img:focus, .projects video:hover, .projects video:focus {
-  transform:scale(1.01);
+.projects img:hover,
+.projects img:focus,
+.projects video:hover,
+.projects video:focus {
+  transform: scale(1.01);
 }
 
 .projects {
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   display: inline-block;
   /* margin-top: 50px; */
   width: 30%;
@@ -213,8 +222,8 @@ nav span {
 }
 
 .projects h2 {
-font-family: "Kalam";
-margin-bottom: 0;
+  font-family: "Kalam";
+  margin-bottom: 0;
 }
 
 .contact {
@@ -236,92 +245,18 @@ margin-bottom: 0;
   color: #343535;
 }
 
-.contact a:hover, .contact a:focus {
-  color: rgb(150, 150, 150)
+.contact a:hover,
+.contact a:focus {
+  color: rgb(150, 150, 150);
 }
 
-
-@media (min-width: 320px) and (max-width: 480px)  { 
-
-    nav {
-    background-color: white;
-      position: relative;;
-      z-index: 9999;
-      padding: 5px;
-      padding-bottom: 10px; 
-    }
-
-    nav a {
-      color: black;
-      text-align: center;
-      padding: 6px 8px;
-      text-decoration: none;
-      font-size: 13px;
-    }
-
-    .intro  {
-      padding-top: 10px;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-
-    .Line {
-      width: 50%;
-    }
-
-
-    .skills { 
-      display: block;
-      flex: 1;
-      justify-content: center;
-    }
-
-    .skills:nth-child(2) {
-      margin-bottom: 25px;
-    }
-
-    .skills:nth-child(3) {
-      margin-bottom: 50px;
-    }
-
-    .grouped_projects {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .projects {
-      width: 70%;
-      margin-top: 10px;
-    }
-
-    .projects_content p {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    .projects:nth-child(2) {
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    .contact a {
-      font-family: "Josefin Sans";
-      font-weight: bold;
-      font-size: 3em;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  
-  
+@media (min-width: 320px) and (max-width: 480px) {
   nav {
     background-color: white;
-    position: relative;;
+    position: relative;
     z-index: 9999;
     padding: 5px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
   }
 
   nav a {
@@ -331,14 +266,84 @@ margin-bottom: 0;
     text-decoration: none;
     font-size: 13px;
   }
-  
+
+  .intro {
+    padding-top: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Line {
+    width: 50%;
+  }
+
+  .skills {
+    display: block;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .skills:nth-child(2) {
+    margin-bottom: 25px;
+  }
+
+  .skills:nth-child(3) {
+    margin-bottom: 50px;
+  }
+
+  .grouped_projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projects {
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  .projects_content p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .projects:nth-child(2) {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact a {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  nav {
+    background-color: white;
+    position: relative;
+    z-index: 9999;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  nav a {
+    color: black;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
   .intro {
     width: 80%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
 
-  .skills { 
+  .skills {
     display: block;
     flex: 1;
     justify-content: center;
@@ -357,8 +362,9 @@ margin-bottom: 0;
     font-weight: bold;
     font-size: 1.5em;
   }
-  
-  .contact a:hover, .contact a:focus {
+
+  .contact a:hover,
+  .contact a:focus {
     font-size: 1.5em;
   }
 }
