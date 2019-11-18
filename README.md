@@ -1,2 +1,2 @@
-# [Deployment](http://josiahsingh.me/)
+# [Deployment](https://josiahsingh.xyz/)
 
